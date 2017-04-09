@@ -1,9 +1,9 @@
 <?php
 require_once "../config/mysql.config.php";
-
+//var_dump(connect());  
 //cnnect mysql
 function connect(){
-	$link = mysqli_connect(Localhost, User, Password, Db);
+	$link = mysqli_connect('localhost', 'root', '123456', 'blog');
 	mysqli_set_charset($link, "utf8");
 	return $link;
 }
@@ -13,14 +13,14 @@ function insert($table, $array){
 	$link = connect();
 	$keys =join(",", array_keys($array));
 	$values = "'".join("','", array_values($array))."'";
-	//echo $values;
+	echo $values;
 	$sql = "insert into {$table} ({$keys}) values($values)";
 	$num = mysqli_query($link, $sql);
 	mysqli_close($link);
 	return $num;
 }
-
-
+//$num =  insert('article', array('title'=>'goodda', 'content'=>'onkdml\n fine'));
+//var_dump($num);
 //delete data
 function delete($table, $where = null){
 	$where = $where==null? null :" where ".$where;

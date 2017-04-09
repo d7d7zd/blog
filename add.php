@@ -19,7 +19,7 @@ session_start();
 			</div>
 			
 			<div class="c-content add">
-				<form action="">
+				<form action="./control/add.c.php" method="post">
 					<div class="form-group"><label for="title">题标</label><input type="text" name="title"/></div>
 					<div class="form-group"><label for="content">内容</label><textarea name="content" rows="10" cols="100%"></textarea></div>
 					<button type="submit">提交</button>
