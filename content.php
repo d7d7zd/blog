@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+require_once "./lib/mysql.php"; 
+$id = $_GET['id'];
+$li = select('article', "id='{$id}'");
+
+?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -14,8 +19,8 @@
 			</div>
 			
 			<div class="c-content">
-				<h3 class="c-title">CSS布局大全</h3>
-				<p class="c-content">史上最全的CSS布局技巧</p>	
+				<h3 class="c-title"><?php echo $li['title']?></h3>
+				<p class="c-content"><?php echo $li['content']?></p>	
 			</div>
 			
 			<div class="footer">

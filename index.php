@@ -22,7 +22,7 @@ $list = selectAll('article');
 				<ul class="list">
 					<?php foreach($list as $li):?>
 					<li class="list-li">
-						<a href="">
+						<a href="content.php?id=<?php echo $li['id'] ?>">
 							<h3 class="li-title"><?php echo $li['title'];?></h3>
 							<p class="li-content"><?php echo substr($li['content'],0,46)."...";?></p>
 							
