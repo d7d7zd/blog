@@ -14,13 +14,25 @@ $li = select('article', "id='{$id}'");
 	<body>
 		<div class="mid">
 			<div class="header">
-				<h1 class="title">迷失的红<small>lost.red</small></h1>
+				<a href="index.php"><h1 class="title">迷失的红<small>lost.red</small></h1></a>
 				<h2 class="title-info">专注前沿技术</h2>
 			</div>
 			
 			<div class="c-content">
 				<h3 class="c-title"><?php echo $li['title']?></h3>
-				<p class="c-content"><?php echo $li['content']?></p>	
+			<?php 
+				
+//				$names = preg_split('/\r\n/',$li[);
+//				foreach($names as $name){
+// 					 echo $name;
+//				}
+				$str = $li['content'];
+				$strlist = explode("\n", $str);
+				foreach($strlist as $strtmp){
+					echo "<p class='cc-content'>{$strtmp}</p>";
+				}
+			
+				?>
 			</div>
 			
 			<div class="footer">
