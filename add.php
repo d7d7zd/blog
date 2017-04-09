@@ -1,4 +1,9 @@
-<?php ?>
+<?php 
+session_start();
+ if(!$_SESSION['pin'] == '606'){
+ 	header('location:index.php');
+ }	
+?>
 <!doctype html>
 <html lang="en">
 	<head>

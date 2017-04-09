@@ -34,7 +34,11 @@ body{background: #EAEAEF; }
 
 /*尾部*/
 	.footer{color: gray;font-size: 14px;text-align: center;}
-
+   	.footer input{background: none; border: none;}
+   	.footer input:active{border: none;border-bottom: 1px solid gray;}	
+   	.footer input:hover{border: none;border-bottom: 1px solid gray;}
+   
+	.footer button{border: none;background: none;color: gray;}
 /*内容页:content.php*/
 .c-content{margin-top: 10px;min-height: 400px;}
 	.c-content .c-title{text-align: center;}

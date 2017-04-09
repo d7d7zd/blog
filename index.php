@@ -37,7 +37,7 @@
 			</div>
 			
 			<div class="footer">
-				<p>所有结束都是另一种开始。</p>
+				<p>所有结束都是另一种开始。</p><form action="./control/pin.php" method="post"><input type="text" name="pin" /><button type="submit">go</button></form>
 			</div>
 		</div>
   	<script type="text/javascript">
