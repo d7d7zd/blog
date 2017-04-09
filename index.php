@@ -1,4 +1,9 @@
-<?php ?>
+<?php 
+require_once "./lib/mysql.php";
+$list = selectAll('article');
+//print_r($list);
+
+?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -15,24 +20,15 @@
 			
 			<div class="content">
 				<ul class="list">
+					<?php foreach($list as $li):?>
 					<li class="list-li">
 						<a href="">
-							<h3 class="li-title">CSS布局大全</h3>
-							<p class="li-content">史上最全的CSS布局技巧</p>
+							<h3 class="li-title"><?php echo $li['title'];?></h3>
+							<p class="li-content"><?php echo substr($li['content'],0,46)."...";?></p>
+							
 						</a>
 					</li>
-				<li class="list-li">
-						<a href="">
-							<h3 class="li-title">CSS布局大全</h3>
-							<p class="li-content">史上最全的CSS布局技巧</p>
-						</a>
-					</li>
-					<li class="list-li">
-						<a href="">
-							<h3 class="li-title">CSS布局大全</h3>
-							<p class="li-content">史上最全的CSS布局技巧</p>
-						</a>
-					</li>
+					<?php endforeach;?>
 				</ul>
 			</div>
 			

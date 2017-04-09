@@ -1,5 +1,5 @@
 <?php
-require_once "../config/mysql.config.php";
+//require_once "../config/mysql.config.php";
 //var_dump(connect());  
 //cnnect mysql
 function connect(){

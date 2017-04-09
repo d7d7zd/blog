@@ -10,3 +10,5 @@ nothing
 		实现add.php不能直接进行，需要验证pin.
 		0.0.4
 		完成增加功能，post传进add.c.php,存入数据库
+		0.0.5
+		在index里面读取数据库article表内容
