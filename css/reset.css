@@ -1,6 +1,9 @@
 body, img, h1{
 	margin:0;
 }
+a{
+	text-decoration: none;
+}
 
 ul{
 	list-style: none;
@@ -42,7 +45,7 @@ body{background: #EAEAEF; }
 /*内容页:content.php*/
 .c-content{margin-top: 10px;min-height: 400px;}
 	.c-content .c-title{text-align: center;}
-	.c-content .c-content{text-indent: 40px;}
+	.c-content .cc-content{text-indent: 40px;margin:20px 0;}
 	
 	
 /*新增页*/
