@@ -1,0 +1,46 @@
+body, img, h1{
+	margin:0;
+}
+
+ul{
+	list-style: none;
+}
+/*配色方案*/
+.c-lblue{color: #81C2D6;}.bg-lblue{background:#81C2D6;}
+.c-blue{color:#8192D6;}.bg-blue{background: #8192D6;}
+.c-red{color:#b31800;}.bg-red{background: #b31800;}
+.c-yellow{color:#DCF7A1}.bg-yellow{background: #DCF7A1;}
+.c-green{color: #83FCD8;}.bg-green{background: #83FCD8;}
+/*body*/
+body{background: #EAEAEF; }
+/*中间体*/
+.mid{width: 1000px;margin:0 auto;}
+/*头部*/
+.header{}
+	/*头部里的title*/
+	.title{color: #b31800;font: bold "微软雅黑""arial, helvetica, sans-serif";margin: 25px 10px;}
+	.title small{color: #DB3f2f;padding-left: 10px;font-size: 20px;font-style: italic;}
+	.title-info{margin: 0 50px; font:20px/25px "楷体";color: gray;}
+/*内容*/
+.content{min-height: 400px;}
+	/*list列表*/
+	.list{margin-top:50px;}
+	.list-li{margin: 20px 0;}
+	.list-li a{text-decoration: none;}
+	.list-li a:hover{color:#B31800;}
+	.li-title{margin:0 0;}
+	.li-content{margin: 0 0;text-indent: 50px;color: gray;}
+	.li-content:hover{color: #DB3F2F;}
+
+/*尾部*/
+	.footer{color: gray;font-size: 14px;text-align: center;}
+
+/*内容页:content.php*/
+.c-content{margin-top: 10px;min-height: 400px;}
+	.c-content .c-title{text-align: center;}
+	.c-content .c-content{text-indent: 40px;}
+	
+	
+/*新增页*/
+.form-group{margin:10px 0;}
+.form-group label{margin-right: 10px ;}
